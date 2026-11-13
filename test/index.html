@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio | Babung</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+  <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+
+    <style>
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        background: #fff;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+
+      nav ul {
+        display: flex;
+        gap: 1.5rem;
+        list-style: none;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: #333;
+        font-weight: 600;
+      }
+
+      .menu-toggle {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+        z-index: 1100;
+      }
+
+      .menu-toggle span {
+        height: 3px;
+        width: 25px;
+        background: #333;
+        margin-bottom: 4px;
+        border-radius: 2px;
+        transition: all 0.3s ease;
+      }
+
+      .menu-toggle.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+      }
+      .menu-toggle.active span:nth-child(2) {
+        opacity: 0;
+      }
+      .menu-toggle.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+      }
+
+      @media (max-width: 768px) {
+        .menu-toggle {
+          display: flex;
+        }
+
+        nav ul {
+          display: none;
+          flex-direction: column;
+          position: absolute;
+          top: 60px;
+          right: 2rem;
+          background: white;
+          padding: 1rem;
+          border-radius: 8px;
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        nav .logo {
+          font-size: 1rem;
+        }
+
+        nav ul.active {
+          display: flex;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page gradient-noise"></main>
+    <nav class="reveal slide-down">
+      <a href="#" class="logo">Moch Babung Nasrulloh</a>
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">AboutMe</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#project">Projects</a></li>
+        <li><a href="#Portofolio">PF Project</a></li>
+        <li><a href="#certified">Certified</a></li>
+      </ul>
+    </nav>
+
+    <header id="home" class="hero reveal slide-right">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Hello, i'm <span>Babung</span></h1>
+          <p>Data Analyst | UI/UX Designer | Design Graphic | Web Development</p>
+        </div>
+        <div class="hero-image">
+          <img src="img/fotosaya.png" alt="Foto Profil" />
+        </div>
+      </div>
+    </header>
+
+    <section id="about" class="reveal slide-left">
+      <h2>About Me</h2>
+      <p>
+        I'm Babung, I come from Bandung, West Java. I graduated from Pasundan
+        University major in Informatics Engineering. I like editing photos or
+        videos, and I have expertise in data analysis, databases, web
+        programming, graphic design, and digital marketing. I like to work
+        seriously in the scope of organizations and the world of work. I am Moch
+        Babung Nasrulloh, greetings to all and please cooperate and guide me
+      </p>
+      <p>
+        I am Moch Babung Nasrulloh, greetings to all and please cooperate and
+        guide me
+      </p>
+    </section>
+
+    <section id="skills" class="reveal slide-up">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>HTML & CSS</h3>
+          <p>Responsive structure and styling using Flexbox & Grid.</p>
+        </div>
+        <div class="skill-card">
+          <h3>JavaScript</h3>
+          <p>DOM manipulation, animation, and dynamic interactivity.</p>
+        </div>
+        <div class="skill-card">
+          <h3>UI/UX Design</h3>
+          <p>
+            User-friendly interface design with Figma, Canva, Adobe Illustrator,
+            Adobe Photoshop.
+          </p>
+        </div>
+        <div class="skill-card">
+          <h3>DB & DevOps</h3>
+          <p>
+            Includes SQL, PostgreeSQL, Spreadsheet, Ms.Excel, Oracle, Looker
+            Studio.
+          </p>
+        </div>
+        <div class="skill-card">
+          <h3>Design Graphic</h3>
+          <p>Adobe Photoshop, Adobe Illustrator, Canva.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="project" class="container">
+      <h2>My Projects</h2>
+      <div class="cards">
+        <!-- Card 1 -->
+        <div class="card">
+          <img src="img/visualization2.png" alt="" />
+          <h2>Dashboard Analytics of Sales</h2>
+          <p>create a visualization of total sales use looker studio .</p>
+          <a
+            href="https://lookerstudio.google.com/s/vNxK_IFs9WU"
+            target="_blank"
+            ><button class="btn">View More</button>
+          </a>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+          <img src="img/data2.jpg" alt="" />
+          <h2>Orders Data Analysis</h2>
+          <p>Tokopaedi data analysis use GoogleBigQuery.</p>
+          <a
+            href="https://console.cloud.google.com/bigquery?hl=en&inv=1&invt=Ab4rBw&project=imposing-byway-457912-t7&ws=!1m10!1m4!1m3!1simposing-byway-457912-t7!2sbquxjob_79bc86f2_1987aa4633b!3sUS!1m4!4m3!1simposing-byway-457912-t7!2sTokopaedi!3sorders"
+            target="_blank"
+            ><button class="btn">View More</button>
+          </a>
+        </div>
+        <!-- Card 3 -->
+        <div class="card">
+          <img src="img/Maxim-food.png" alt="" />
+          <h2>UI UX Design</h2>
+          <p>Revamp the full food page of the Maxim App .</p>
+          <a
+            href="https://www.figma.com/proto/YsPhJ2HVxfMx0eEj5VFkva/A1_Finpro?node-id=298-2329&p=f&t=Oeeo151IH4HxT6o1-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=298%3A2329"
+            target="_blank"
+            ><button class="btn">View More</button>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="Portofolio" class="container">
+      <h2>Portofolio Final Projects</h2>
+
+      <div class="cards">
+        <!-- Card 1 -->
+        <div class="card">
+          <img src="img/333.png" alt="Landing Page" />
+          <h2>Portofolio Final Project Data Analyst : SQL</h2>
+          <p>Manage data and perform analysis use SQL</p>
+          <a
+            href="https://www.linkedin.com/posts/babung-nasrulloh-a7233530b_portofolio-final-project-activity-7306892862091137025-gRct?utm_source=share&utm_medium=member_ios&rcm=ACoAAE7krrYBZ2IZM8H8bn6tms6p_66-x49-e2s"
+            target="_blank"
+            ><button class="btn">View More</button>
+          </a>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+          <img src="img/sql.png" alt="" />
+          <h2>Portofolio Final Project Data Analysis</h2>
+          <p>Manage data and analyze data use PostgreSQL, BigQuery, Python, and Looker Studio.</p>
+          <a
+            href=""
+            target="_blank"
+            ><button class="btn">View More</button>
+          </a>
+        </div>
+        <!-- Card 3-->
+        <div class="card">
+          <img src="img/Maxim-food-port.png" alt="UI/UX Design" />
+          <h2>Maxim Food App</h2>
+          <p>Portofolio final project UI/UX Design, Revamp maxim food app.</p>
+          <a
+            href="https://www.linkedin.com/posts/babung-nasrulloh-a7233530b_portofolio-maxim-food-revamp-activity-7391467484605759489-JyV7?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE7krrYBZ2IZM8H8bn6tms6p_66-x49-e2s"
+            target="_blank"
+            ><button class="btn">View More</button>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2>Organizational Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h4>2021 - 2022 Kominfo</h4>
+          <p>
+            Communication and Information Coordinator at the Informatics
+            Engineering Student Association. Managing social media and websites
+            to disseminate information in both academic and non-academic fields.
+          </p>
+        </div>
+        <div class="timeline-item">
+          <h4>2020 - 2021 Kaderisasi</h4>
+          <p>
+            Member of the cadre division at the Informatics Engineering Student
+            Association. Assisting students in academics and developing the
+            characteristics of a responsible leader.
+          </p>
+        </div>
+      </div>
+    </section>
+<section id="certified" class ="certified">
+  <h2 class="certified-title">Certified</h2>
+
+  <div class="certified-card">
+
+    <a href="https://drive.google.com/file/d/1d8s8cmnxJPndnaAO1C6vAH6gWEI7i2XT/view?usp=sharing" target="_blank" class="cert-link">
+      <div class="cert-item">
+        <div class="cert-icon">
+          <i class="fa-solid fa-chart-line"></i>
+        </div>
+        <div class="cert-content">
+          <h3>Data Analysis</h3>
+          <p>Sertifikat Bootcamp Fullstack Data Analysis with <b>MYSKILL</b></p>
+        </div>
+      </div>
+    </a>
+
+    <a href="https://drive.google.com/file/d/1iYGYEIuVcNztxhQVNYOlRiXS5BOo3rfv/view?usp=sharing" target="_blank" class="cert-link">
+      <div class="cert-item">
+        <div class="cert-icon">
+          <i class="fa-solid fa-file-excel"></i>
+        </div>
+        <div class="cert-content">
+          <h3>MS Excel</h3>
+          <p>Sertifikat Bootcamp Fullstack Ms Office : Excel with <b>DSAREA.ID</b></p>
+        </div>
+      </div>
+    </a>
+
+    <a href="https://drive.google.com/file/d/1f-oaUMvNKczERp91vyOsay1_Cefqql4I/view?usp=sharing" target="_blank" class="cert-link">
+      <div class="cert-item">
+        <div class="cert-icon">
+          <i class="fa-solid fa-pen-nib"></i>
+        </div>
+        <div class="cert-content">
+          <h3>UI / UX Design</h3>
+          <p>Certified Fullstack UI/UX Design Bootcamp (User Interface & User Experience) with <b>MYSKILL</b></p>
+        </div>
+      </div>
+    </a>
+
+    <a href="https://drive.google.com/file/d/1SJ9E60bOUvhb1rqpVYgWq87nwKtsAy2S/view?usp=sharing" target="_blank" class="cert-link">
+      <div class="cert-item">
+        <div class="cert-icon">
+          <i class="fa-solid fa-database"></i>
+        </div>
+        <div class="cert-content">
+          <h3>Data Analyst : SQL</h3>
+          <p>Certified Fullstack Data Analyst Bootcamp: SQL for data processing & analysis with <b>IODA ACADEMY</b></p>
+        </div>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<section class="contact">
+  <h2 class="contact-title">Contact Me</h2>
+  <p class="contact-subtitle">Let’s work together or just say hi 👋</p>
+
+  <div class="contact-grid">
+    <a href="mailto:babungnasrulloh07@email.com" class="contact-card email">
+      <i class="fa-solid fa-envelope"></i>
+      <h3>Email</h3>
+      <span>babungnasrulloh07@email.com</span>
+    </a>
+
+    <a href="https://wa.me/6287830532733" class="contact-card whatsapp" target="_blank">
+      <i class="fa-brands fa-whatsapp"></i>
+      <h3>WhatsApp</h3>
+      <span>+62 87830xxxxxxx</span>
+    </a>
+
+    <a href="https://www.linkedin.com/in/babung-nasrulloh-a7233530b/" class="contact-card linkedin" target="_blank">
+      <i class="fa-brands fa-linkedin"></i>
+      <h3>LinkedIn</h3>
+      <span>/in/babung</span>
+    </a>
+
+    <a href="https://github.com/babung" class="contact-card github" target="_blank">
+      <i class="fa-brands fa-github"></i>
+      <h3>GitHub</h3>
+      <span>github.com/babung</span>
+    </a>
+  </div>
+</section>
+
+
+
+            
+    </main>
+
+    <footer class="reveal slide-up">
+      <p>© 2025.Moch Babung Nasrulloh.</p>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
